@@ -1,6 +1,6 @@
 # Release and publication
 
-The local artifacts are prepared for review. This document does not represent Chrome Web Store acceptance, a signed Firefox distribution, or a public repository.
+PHProtect 1.1.0 source and release packages are public. Chrome Web Store submission is in progress and is not yet confirmed as submitted or approved. The Firefox build remains unsigned and experimental.
 
 ## Package and checks
 
@@ -68,15 +68,20 @@ Answer the dashboard's current data-use questions against the actual definitions
 8. Test all popup controls, a restricted browser page, keyboard navigation, 200% zoom and light/dark modes. Reset preferences in Help.
 9. Run the automated suite for authorization, queues, expiry, concurrency and package reproducibility.
 
-## Maintainer publication steps still required
+## Published distribution
 
-- Choose the public repository owner, publish the source and release artifacts, and set the repository/license/support URLs in the store listing. This checkout has no public remote configured by the task.
-- Enable GitHub Actions for automatic PR closure; enable private vulnerability reporting or publish a verified private contact.
-- Publish the privacy policy and the Limited Use statement at the project's public URL.
-- Create/choose the Chrome Web Store developer account, complete any required verification, fill the current privacy and permission fields accurately, upload the Chrome ZIP and assets, and request review.
-- Perform a final interactive acceptance check in current Chrome before distribution, including keyboard navigation and browser-managed site-access restrictions. The actual toolbar popup is also exercised automatically through CDP.
-- Treat Firefox as experimental until a live Firefox run, manifest/linter review, privacy declaration review and Mozilla signing are complete. Do not upload the Chrome ZIP to AMO.
-- Recheck the PHP advisory at publication, since this release's data was reviewed on 22 October 2026.
+- Public repository: https://github.com/yananai-chiwuta/PHProtect
+- Release packages and SHA-256 checksums: https://github.com/yananai-chiwuta/PHProtect/releases/tag/v1.1.0
+- Public download and installation page: https://yananai-chiwuta.github.io/PHProtect/
+- Public privacy policy and Limited Use statement: https://yananai-chiwuta.github.io/PHProtect/privacy.html
+- Private vulnerability reporting: https://github.com/yananai-chiwuta/PHProtect/security/advisories/new
+- GitHub Actions is enabled for checks and automatic PR closure. The initial release checks passed.
+
+## Store submission still required
+
+Upload `dist/phprotect-chrome.zip` and `store/assets/` through the selected publisher dashboard, complete the listing and privacy fields, then request review. The user has authorized this submission. A Google sign-in verification is currently blocking dashboard access in the in-app browser; the connected Chrome profile cannot script store pages. Do not claim submitted-for-review status until the dashboard or the maintainer confirms the submission.
+
+The submission can use the published homepage, policy, source and support URLs above. Store approval is a separate outcome. Firefox still needs live testing, manifest/linter review and Mozilla signing before supported distribution.
 
 ## Official references
 

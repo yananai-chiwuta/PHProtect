@@ -2,7 +2,7 @@
 
 This extension has not received an independent security audit. Supported development currently targets the latest source; no long-term support window or response SLA is promised.
 
-For a sensitive report, use the repository's private vulnerability reporting / security-advisory feature if enabled. Before publication the maintainer must enable it or publish a verified private contact. No private email address is configured in this source tree. If no private channel exists, open only a brief request for one, without technical exploit details or user data.
+For sensitive vulnerabilities, use [GitHub private vulnerability reporting](https://github.com/yananai-chiwuta/PHProtect/security/advisories/new). It is enabled for the public repository. Non-sensitive bugs can be reported in [Issues](https://github.com/yananai-chiwuta/PHProtect/issues). No private email address or guaranteed response time is advertised.
 
 Do not post real seed phrases, private keys, live wallet payloads or confidential URLs. Use a minimal local reproduction and synthetic values. Pull requests are not accepted.
 

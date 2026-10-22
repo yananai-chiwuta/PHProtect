@@ -40,4 +40,4 @@ Individual checks can be turned off in the popup. Exact-hostname wallet exceptio
 
 ## Questions or security reports
 
-Use the repository's issue tracker for non-sensitive questions. Do not post real recovery phrases, private keys, clipboard contents, confidential URLs or wallet payloads. For a sensitive vulnerability, use the repository's private security-advisory reporting if the maintainer has enabled it; otherwise keep details private until a maintainer provides a channel. No private support address is represented as available by this policy. Pull requests are not accepted.
+Use https://github.com/yananai-chiwuta/PHProtect/issues for non-sensitive questions. Do not post real recovery phrases, private keys, clipboard contents, confidential URLs or wallet payloads. For a sensitive vulnerability, use the enabled private reporting channel at https://github.com/yananai-chiwuta/PHProtect/security/advisories/new. No private support email or response-time guarantee is advertised. Pull requests are not accepted.
