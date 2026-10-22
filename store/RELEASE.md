@@ -77,11 +77,13 @@ Answer the dashboard's current data-use questions against the actual definitions
 - Private vulnerability reporting: https://github.com/yananai-chiwuta/PHProtect/security/advisories/new
 - GitHub Actions is enabled for checks and automatic PR closure. The initial release checks passed.
 
-## Store submission still required
+## Chrome Web Store draft
 
-Upload `dist/phprotect-chrome.zip` and `store/assets/` through the selected publisher dashboard, complete the listing and privacy fields, then request review. The user has authorized this submission. A Google sign-in verification is currently blocking dashboard access in the in-app browser; the connected Chrome profile cannot script store pages. Do not claim submitted-for-review status until the dashboard or the maintainer confirms the submission.
+The Chrome package and listing are saved under item ID `klghbcoedkempaokhdfmjikaebnkndmn` (version 1.1.0). The listing includes the real UI screenshots, Privacy & Security category, homepage and support links, permission justifications, local data-handling disclosures, no-remote-code declaration and inert reviewer instructions. Distribution is public, free of charge and available in all store regions.
 
-The submission can use the published homepage, policy, source and support URLs above. Store approval is a separate outcome. Firefox still needs live testing, manifest/linter review and Mozilla signing before supported distribution.
+Submission is awaiting verification of the publisher's public contact email. The item remains a draft until the developer dashboard confirms submission for review. Store approval is a separate outcome. Update the README distribution status only after a confirmed submission.
+
+Firefox still needs live testing, manifest/linter review and Mozilla signing before supported distribution.
 
 ## Official references
 
