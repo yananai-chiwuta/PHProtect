@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PHProtect</title>
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="masthead">
+      <img src="icons/icon-48.png" alt="" width="34" height="34" />
+      <div>
+        <h1>PHProtect</h1>
+        <p id="tagline">Website checks</p>
+      </div>
+      <button id="help" class="help-button" aria-label="Help, privacy and limitations">Help</button>
+    </header>
+    <main>
+      <div class="site-line">
+        <span class="label">Current site</span><span id="host">Loading...</span>
+      </div>
+      <article class="assessment" id="assessment" aria-labelledby="status">
+        <p class="check-label">PHP2Shell check</p>
+        <h2 id="status" role="status">Checking...</h2>
+        <p id="note"></p>
+        <dl id="details"></dl>
+        <div class="actions">
+          <button id="recheck" title="Sends HEAD to this page; GET only if HEAD is unsupported.">
+            Refresh headers</button
+          ><button id="copy">Copy report</button>
+        </div>
+        <button class="owner" id="tell" hidden>Copy note for site owner</button>
+      </article>
+      <p class="coverage" id="coverage" role="status">Checking guard availability...</p>
+      <section class="page-notes" aria-labelledby="findingsTitle">
+        <div class="section-heading">
+          <h2 id="findingsTitle">Page signals</h2>
+          <span id="findingCount" class="count">0</span>
+        </div>
+        <p class="hint" id="findingsEmpty">
+          No signals reported. This does not verify the page is safe.
+        </p>
+        <ul id="findings"></ul>
+      </section>
+      <details class="disclosure" id="eventsSection" hidden>
+        <summary>
+          <span id="eventsTitle">Activity on this tab</span
+          ><span id="eventCount" class="count">0</span>
+        </summary>
+        <ul id="events"></ul>
+      </details>
+      <details class="disclosure">
+        <summary>
+          <span id="guardTitle">Protection settings</span><span class="muted">Customize</span>
+        </summary>
+        <p class="hint">
+          Global switches apply to every site. Website hooks provide best-effort protection.
+        </p>
+        <div class="toggles">
+          <label
+            ><span
+              ><strong id="gSeed">Recovery phrases</strong
+              ><small>English BIP39 words in supported fields</small></span
+            ><input type="checkbox" id="tSeed"
+          /></label>
+          <label
+            ><span
+              ><strong id="gWallet">Wallet requests</strong
+              ><small>Supported Ethereum provider calls</small></span
+            ><input type="checkbox" id="tWallet"
+          /></label>
+          <label
+            ><span
+              ><strong id="gClip">Clipboard commands</strong
+              ><small>Recognized ClickFix command patterns</small></span
+            ><input type="checkbox" id="tClip"
+          /></label>
+          <label
+            ><span
+              ><strong id="gAudit">Page signals</strong
+              ><small>Look for common phishing patterns locally</small></span
+            ><input type="checkbox" id="tAudit"
+          /></label>
+          <label
+            ><span
+              ><strong id="gNotify">Clipboard alerts</strong
+              ><small>Open a notice when a command is replaced</small></span
+            ><input type="checkbox" id="tNotify"
+          /></label>
+        </div>
+        <p class="exception-title">Exceptions for this host</p>
+        <div class="toggles">
+          <label
+            ><span
+              ><strong id="gTrusted">Skip medium wallet warnings</strong
+              ><small>High-risk requests still need a decision</small></span
+            ><input type="checkbox" id="tTrusted"
+          /></label>
+          <label
+            ><span
+              ><strong id="gPaused">Pause wallet guard</strong
+              ><small>Other enabled checks keep running</small></span
+            ><input type="checkbox" id="tPaused"
+          /></label>
+        </div>
+      </details>
+      <p id="exceptions" class="exception-notice" hidden></p>
+      <p id="msg" role="status" aria-live="polite"></p>
+    </main>
+    <footer>
+      <span id="footer">Local checks. No telemetry.</span
+      ><button id="about">Help and privacy</button>
+    </footer>
+    <script src="popup.js"></script>
+  </body>
+</html>

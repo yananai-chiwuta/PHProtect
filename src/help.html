@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Welcome to PHProtect</title>
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="help.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header>
+        <a class="brand" href="help.html"
+          ><img src="icons/icon-48.png" alt="" width="38" height="38" />PHProtect</a
+        >
+      </header>
+      <main>
+        <h1>Using PHProtect</h1>
+        <p class="lead">
+          PHProtect adds local warning signals and a moment to review sensitive actions. Checks run
+          on your device. You can inspect every script in the source.
+        </p>
+        <div class="important">
+          <strong>A browser extension cannot fix a vulnerable PHP server.</strong>
+          <p>
+            PHP2Shell is a server-side threat. PHProtect compares advertised versions with a bundled
+            advisory and adds best-effort website guards. It cannot verify that a server is patched,
+            detect every attack, or certify a site as safe.
+          </p>
+        </div>
+        <section class="steps">
+          <h2>Start in three steps</h2>
+          <ol>
+            <li>
+              <strong>Pin PHProtect</strong>
+              <p>Use your browser's extensions menu to keep the status button nearby.</p>
+            </li>
+            <li>
+              <strong>Reload your open websites</strong>
+              <p>
+                Newly installed content scripts need a fresh page load. The popup reports whether
+                guards have loaded.
+              </p>
+            </li>
+            <li>
+              <strong>Check the evidence</strong>
+              <p>
+                Open the popup for PHP hints, page signals and settings. Refresh headers only when
+                you want an extra request to that page.
+              </p>
+            </li>
+          </ol>
+        </section>
+        <div class="grid">
+          <section>
+            <h2>Understand PHP hints</h2>
+            <p>
+              An old version may need attention. A version meeting the PHP2Shell cutoff is only a
+              header claim. Hidden versions and unverified branches stay unknown. Vendors can
+              backport fixes without changing that claim.
+            </p>
+          </section>
+          <section>
+            <h2>Review sensitive actions</h2>
+            <p>
+              Supported Ethereum requests can open an extension decision window. English recovery
+              phrases and recognized clipboard commands can trigger warnings. Read the hostname,
+              frame and wallet details before continuing.
+            </p>
+          </section>
+        </div>
+        <section>
+          <h2>Know the limits</h2>
+          <ul>
+            <li>
+              Page scripts can interfere with page-world wallet and clipboard hooks. Providers
+              injected late or hidden outside supported APIs may bypass them.
+            </li>
+            <li>
+              A site may observe keystrokes or input before phrase detection. Clearing text cannot
+              recall data already sent. Non-English phrases and custom editors may be missed.
+            </li>
+            <li>
+              Page signals are heuristics, including legitimate cross-site forms and embedded
+              content. False positives and missed attacks are expected.
+            </li>
+            <li>
+              Browser pages, extension stores and some protected documents restrict extensions.
+              Incognito and file URLs are not supported by default.
+            </li>
+            <li>
+              PHProtect does not simulate transactions, scan downloads, block network traffic or
+              remove malware. An extension-owned window can still be visually imitated by a website.
+            </li>
+          </ul>
+        </section>
+        <section class="settings-block">
+          <h2>Your controls</h2>
+          <p>
+            The popup's protection switches apply globally. Site exceptions use the exact hostname,
+            across schemes and ports; subdomains have separate settings. Skipping medium wallet
+            warnings never skips high-risk prompts. Pausing the wallet guard leaves other enabled
+            checks running.
+          </p>
+          <button id="reset">Restore default guards &amp; clear site exceptions</button>
+          <p id="result" role="status" aria-live="polite"></p>
+        </section>
+        <section>
+          <h2>Privacy, in plain language</h2>
+          <p>
+            Checks run on your device. PHP headers, some page text and form values, supported wallet
+            requests and intercepted clipboard text are processed locally. Seed words and clipboard
+            text are not sent to the background or written to extension storage. Short findings,
+            hostnames and a small tab activity list stay in browser session storage; preferences and
+            site exceptions stay locally until reset or uninstall.
+          </p>
+          <p>
+            Refreshing headers sends HEAD to the current page URL, with GET only if HEAD is
+            unsupported. Cookies are omitted. The website still receives your IP address, URL and
+            normal request metadata. Copying a report puts its hostname and findings on your
+            clipboard.
+          </p>
+          <p><a href="privacy.html">Read the complete privacy policy </a></p>
+        </section>
+        <section>
+          <h2>About the advisory</h2>
+          <p>
+            Bundled PHP2Shell data reviewed on <strong>22 October 2026</strong>. Rules do not fetch
+            updates. New data arrives with an extension release.
+          </p>
+          <p>
+            Fixed upstream releases: PHP 8.2.35, 8.3.36, 8.4.27 and 8.5.12. Some older branches have
+            source or vendor backports while remaining outside normal upstream support.
+          </p>
+          <p>
+            <a
+              href="https://www.php.net/archive/2026.php#2026-10-21-5"
+              target="_blank"
+              rel="noreferrer noopener"
+              >PHP's official security advisory
+            </a>
+          </p>
+        </section>
+      </main>
+      <footer>
+        PHProtect - MIT licensed - No pull requests accepted. Forks welcome.
+        <p>
+          External links open only when selected. The extension has no affiliation with PHP or
+          browser vendors.
+        </p>
+      </footer>
+    </div>
+    <script src="help.js"></script>
+  </body>
+</html>

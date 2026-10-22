@@ -1,0 +1,17 @@
+name: Close pull requests
+on:
+  pull_request_target:
+    types: [opened, reopened]
+permissions:
+  pull-requests: write
+jobs:
+  close:
+    runs-on: ubuntu-latest
+    steps:
+      # Do not check out or execute pull-request content in this workflow.
+      - name: Apply maintainer-only contribution policy
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: gh pr close "$PR_NUMBER" --repo "$GH_REPO" --comment "This project does not accept pull requests. You are welcome to maintain and distribute a fork under the applicable licenses. Non-sensitive bug reports may be filed as issues."

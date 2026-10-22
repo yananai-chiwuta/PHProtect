@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PHProtect - local website checks</title>
+<meta name="description" content="Open-source PHP2Shell version awareness and best-effort website guards. Install PHProtect from its public GitHub release.">
+<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="help.css">
+</head>
+<body>
+<div class="shell">
+<header><a class="brand" href="index.html"><img src="images/icon-48.png" alt="" width="24" height="24">PHProtect</a><a href="https://github.com/yananai-chiwuta/PHProtect">Source code</a></header>
+<main>
+<h1>Local website checks</h1>
+<p>PHProtect compares advertised PHP versions with the bundled PHP2Shell advisory and adds best-effort guards for recovery phrases, supported wallet requests and recognized clipboard commands.</p>
+<p><strong>A browser extension cannot patch PHP or verify that a website is safe.</strong> Headers and heuristics can be wrong. Website hooks can be bypassed. Read the <a href="https://github.com/yananai-chiwuta/PHProtect#what-it-does">capabilities and limitations</a> before using it.</p>
+<section>
+<h2>Install in Chrome</h2>
+<ol>
+<li><a href="https://github.com/yananai-chiwuta/PHProtect/releases/latest/download/phprotect-chrome.zip">Download the Chrome ZIP</a> from the official release.</li>
+<li>Extract the ZIP to a permanent folder. Keep that folder; Chrome loads the extension from it.</li>
+<li>Open <code>chrome://extensions</code> and turn on <strong>Developer mode</strong>.</li>
+<li>Choose <strong>Load unpacked</strong> and select the extracted folder containing <code>manifest.json</code>.</li>
+<li>Pin PHProtect and reload your websites. Open its popup to see evidence, guard availability and settings.</li>
+</ol>
+<p>The source installation is available now. Chrome Web Store submission status is maintained in the <a href="https://github.com/yananai-chiwuta/PHProtect#distribution-status">README</a>. A source installation does not imply store approval. Firefox is experimental.</p>
+</section>
+<section>
+<h2>Extension screenshot</h2>
+<p>Actual interface with inert local test data. No real account or attack is pictured.</p>
+<img src="images/popup.png" alt="PHProtect popup showing a PHP version warning, version evidence, page signals and protection settings" width="380">
+</section>
+<section>
+<h2>Privacy and source</h2>
+<p>Checks run locally. No telemetry, account or developer-operated backend. Some page text, form values, supported wallet calls and intercepted clipboard text are processed on your device.</p>
+<p><a href="privacy.html">Privacy policy and Limited Use statement</a></p>
+<p><a href="https://github.com/yananai-chiwuta/PHProtect">Public repository</a> | <a href="https://github.com/yananai-chiwuta/PHProtect/releases/latest">Downloads and checksums</a> | <a href="https://github.com/yananai-chiwuta/PHProtect/issues">Report a bug</a></p>
+</section>
+<section>
+<h2>Forks welcome</h2>
+<p>MIT licensed. Anyone can inspect, fork, modify and redistribute PHProtect under the applicable license notices. No pull requests are accepted. Sensitive reports should use <a href="https://github.com/yananai-chiwuta/PHProtect/security/advisories/new">private vulnerability reporting</a>.</p>
+</section>
+</main>
+<footer>PHProtect is not affiliated with PHP, Google, Mozilla or wallet providers.</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,224 @@
+{
+  "extName": {
+    "message": "PHProtect — PHP2Shell Awareness & Web Guards"
+  },
+  "extDescription": {
+    "message": "Local PHP2Shell version checks and best-effort guards for recovery phrases, wallet requests and clipboard commands. No telemetry."
+  },
+  "tagline": {
+    "message": "Website checks"
+  },
+  "loading": {
+    "message": "Checking…"
+  },
+  "noData": {
+    "message": "No PHP evidence yet"
+  },
+  "notPhp": {
+    "message": "PHP version unavailable"
+  },
+  "pausedTitle": {
+    "message": "Wallet guard paused here."
+  },
+  "pausedNote": {
+    "message": "PHP2Shell checks and page notes still run."
+  },
+  "vulnTitle": {
+    "message": "PHP version needs attention"
+  },
+  "vulnNote": {
+    "message": "The advertised version predates a PHP2Shell fix. Avoid sensitive activity until the operator verifies patching. Vendor backports can make fixed servers look old."
+  },
+  "eolTitle": {
+    "message": "PHP branch out of support"
+  },
+  "eolNote": {
+    "message": "This branch is outside normal upstream support. Vendor or source backports may exist; its patch status cannot be verified from this header."
+  },
+  "patchedTitle": {
+    "message": "PHP version meets the cutoff"
+  },
+  "hiddenTitle": {
+    "message": "PHP hinted, version unverified"
+  },
+  "hiddenNote": {
+    "message": "Headers and CMS hints cannot establish the running PHP version or patch status. Hidden versions are common. Unknown does not mean safe."
+  },
+  "rowSite": {
+    "message": "Site"
+  },
+  "rowPhp": {
+    "message": "Advertised PHP"
+  },
+  "rowNone": {
+    "message": "not advertised"
+  },
+  "rowStatus": {
+    "message": "Status"
+  },
+  "rowCms": {
+    "message": "CMS"
+  },
+  "rowServer": {
+    "message": "Server"
+  },
+  "rowNeeded": {
+    "message": "Patched from"
+  },
+  "rowRecheck": {
+    "message": "Last re-check"
+  },
+  "statusExposed": {
+    "message": "likely exposed"
+  },
+  "statusEol": {
+    "message": "out of support"
+  },
+  "statusPatched": {
+    "message": "patched"
+  },
+  "statusNewer": {
+    "message": "newer branch"
+  },
+  "statusHidden": {
+    "message": "hidden"
+  },
+  "tellOwner": {
+    "message": "Copy note for site owner"
+  },
+  "recheck": {
+    "message": "Refresh headers"
+  },
+  "rechecking": {
+    "message": "Requesting fresh headers…"
+  },
+  "recheckFail": {
+    "message": "Could not refresh. The site may block requests or the tab may have changed."
+  },
+  "recheckNoVersion": {
+    "message": "No PHP version in the fresh headers."
+  },
+  "recheckDone": {
+    "message": "Headers refreshed."
+  },
+  "copyReport": {
+    "message": "Copy report"
+  },
+  "copied": {
+    "message": "Report copied."
+  },
+  "copyFail": {
+    "message": "Could not copy."
+  },
+  "saved": {
+    "message": "Saved."
+  },
+  "findingsTitle": {
+    "message": "Page signals"
+  },
+  "eventsTitle": {
+    "message": "Activity on this tab"
+  },
+  "guardTitle": {
+    "message": "Protection settings"
+  },
+  "guardSeed": {
+    "message": "Recovery phrases"
+  },
+  "guardWallet": {
+    "message": "Wallet requests"
+  },
+  "guardClip": {
+    "message": "Clipboard commands"
+  },
+  "guardAudit": {
+    "message": "Page signals"
+  },
+  "guardNotify": {
+    "message": "Clipboard alerts"
+  },
+  "guardTrusted": {
+    "message": "Skip medium wallet warnings"
+  },
+  "guardPaused": {
+    "message": "Pause wallet guard"
+  },
+  "footer": {
+    "message": "Checks run locally. No telemetry."
+  },
+  "audit_http_page": {
+    "message": "Page is not HTTPS"
+  },
+  "audit_pw_http": {
+    "message": "Password form on a non-HTTPS page"
+  },
+  "audit_pw_cross_origin": {
+    "message": "Password form posts to another site"
+  },
+  "audit_pw_no_autocomplete": {
+    "message": "Password field has no autocomplete hint"
+  },
+  "audit_hidden_iframe": {
+    "message": "Hidden cross-site iframe"
+  },
+  "audit_cross_origin_iframe": {
+    "message": "Cross-site iframe"
+  },
+  "audit_base_hijack": {
+    "message": "Base URL points to another site"
+  },
+  "audit_clickfix_text": {
+    "message": "Page text asks to paste a command into Run or Terminal"
+  },
+  "audit_hidden_textarea": {
+    "message": "Hidden command box"
+  },
+  "audit_obfuscated_script": {
+    "message": "Heavily obfuscated inline script"
+  },
+  "audit_wallet_hooks": {
+    "message": "Page drives a crypto wallet"
+  },
+  "audit_foreign_scripts": {
+    "message": "Many third-party script origins"
+  },
+  "audit_mixed_content": {
+    "message": "HTTP resource on an HTTPS page"
+  },
+  "audit_meta_refresh": {
+    "message": "Redirects to another site"
+  },
+  "audit_foreign_download": {
+    "message": "Downloads a file from another site"
+  },
+  "audit_many_forms": {
+    "message": "Many forms on one page"
+  },
+  "audit_mixed_script": {
+    "message": "Hostname mixes alphabets (homograph)"
+  },
+  "audit_brand_lookalike": {
+    "message": "Hostname imitates a known brand"
+  },
+  "audit_brand_in_name": {
+    "message": "Brand name inside an unofficial hostname"
+  },
+  "audit_broken_punycode": {
+    "message": "Malformed international hostname"
+  },
+  "audit_odd_hostname": {
+    "message": "Unusual international hostname"
+  },
+  "event_clip_write": {
+    "message": "Clipboard command replaced"
+  },
+  "event_clip_read": {
+    "message": "Clipboard read requested"
+  },
+  "event_wallet_ask": {
+    "message": "Wallet request checked"
+  },
+  "event_seed_ask": {
+    "message": "Possible seed phrase"
+  }
+}

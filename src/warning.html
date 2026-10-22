@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PHProtect</title>
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="warning.css" />
+  </head>
+  <body>
+    <div class="band" id="band">
+      <img src="icons/icon-48.png" alt="" />
+      <div>
+        <small id="kicker">PHProtect</small>
+        <h1 id="title">Checking…</h1>
+      </div>
+      <span class="timer" id="timer"></span>
+    </div>
+    <main>
+      <p class="site" id="site"></p>
+      <p class="queue" id="queue" hidden></p>
+      <dl id="meta"></dl>
+      <ul id="reasons"></ul>
+      <label id="ack" hidden
+        ><input type="checkbox" id="ackbox" /> <span id="acktext"></span
+      ></label>
+      <label id="trustRow" hidden
+        ><input type="checkbox" id="trust" />
+        <span>Always allow medium-risk requests on this site</span></label
+      >
+      <div class="actions">
+        <button id="stop"></button>
+        <button id="go"></button>
+      </div>
+      <details id="tech" hidden>
+        <summary>Technical details</summary>
+        <pre id="techtext"></pre>
+        <div class="mini">
+          <button id="copy" type="button">Copy details</button>
+        </div>
+      </details>
+      <footer>
+        Check that this is an extension window. A website can imitate a warning. PHProtect cannot
+        verify that a request or website is safe.
+      </footer>
+    </main>
+    <script src="warning.js"></script>
+  </body>
+</html>

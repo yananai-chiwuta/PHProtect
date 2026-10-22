@@ -1,0 +1,29 @@
+PHProtect - third-party notices
+===============================
+
+PHProtect's own code is licensed under MIT; see LICENSE.
+Modifications and UI changes are documented in CHANGELOG.md.
+
+1. PHP2Shell version assessment data
+   Source: https://github.com/openai/php2shell-checker
+   License: Apache License 2.0; full text in third_party/Apache-2.0.txt.
+   The original VULNERABLE_THROUGH table is retained with PHProtect-specific
+   unknown-branch, EOL, header and display behavior. Current supported-branch
+   cutoffs were checked against PHP's official advisory on 22 October 2026:
+   https://www.php.net/archive/2026.php#2026-10-21-5
+   Supported first-fixed releases: 8.2.35, 8.3.36, 8.4.27, 8.5.12.
+   These are header hints, not runtime or vendor-package verification.
+
+2. BIP39 English wordlist
+   Source: https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt
+   Original source: https://github.com/trezor/python-mnemonic
+   Copyright (c) 2013-2016 Pavol Rusnak.
+   License: MIT; full text in third_party/BIP39-MIT.txt.
+   The wordlist is embedded in src/bip39.js for local pattern recognition.
+
+3. Required upstream attribution (legal notice only)
+   PHPeek - https://github.com/phpeek-ext/phpeek
+   Copyright (c) 2026 PHPeek contributors.
+   License: MIT; original copyright, permission and warranty notice preserved
+   in third_party/upstream-MIT.txt. Retained for inherited material and
+   provenance. This attribution does not imply affiliation or endorsement.

@@ -1,0 +1,16 @@
+{
+  "name": "phprotect",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Development checks for PHProtect; no runtime npm dependencies",
+  "license": "MIT",
+  "scripts": {
+    "test": "node tools/test.cjs",
+    "build": "python build.py",
+    "test:browser": "node tests/browser.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "prettier": "3.6.2"
+  }
+}

@@ -1,0 +1,93 @@
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --card: #ffffff;
+  --fg: #202124;
+  --muted: #5f6368;
+  --line: #dadce0;
+  --soft: #f5f5f5;
+  --accent: #174ea6;
+  --red: #b3261e;
+  --red-bg: #ffffff;
+  --amber: #5f6368;
+  --amber-bg: #f5f5f5;
+  --green-bg: #ffffff;
+  --ring: #174ea6;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #202124;
+    --card: #202124;
+    --fg: #e8eaed;
+    --muted: #bdc1c6;
+    --line: #5f6368;
+    --soft: #292a2d;
+    --accent: #a8c7fa;
+    --red: #f2b8b5;
+    --red-bg: #202124;
+    --amber: #bdc1c6;
+    --amber-bg: #292a2d;
+    --green-bg: #202124;
+    --ring: #a8c7fa;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font:
+    14px/1.5 Arial,
+    sans-serif;
+}
+button,
+input {
+  font: inherit;
+}
+button {
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--card);
+  color: var(--fg);
+  cursor: pointer;
+}
+button:hover {
+  background: var(--soft);
+}
+button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+button,
+a,
+input,
+summary {
+  outline-offset: 3px;
+}
+:focus-visible {
+  outline: 2px solid var(--ring);
+}
+a {
+  color: var(--accent);
+}
+.muted,
+.hint {
+  color: var(--muted);
+}
+.hint {
+  font-size: 12px;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
