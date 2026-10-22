@@ -7,7 +7,7 @@ Browser icons now fill their canvas for better visibility in the toolbar and ext
 - phprotect-source.zip: complete inspectable source, tests, tools, notices and documentation.
 - SHA256SUMS: SHA-256 digests for these three archives.
 
-Installation instructions and current Chrome Web Store submission status are in the repository README.
+PHProtect 1.1.1 was submitted to the Chrome Web Store for review on 22 October 2026. The developer dashboard confirms Pending review. Store approval is pending; automatic publication is enabled after approval. Installation instructions and current status are in the repository README.
 
 The extension provides local header evidence and best-effort page guards. It cannot patch PHP, verify site safety, guarantee interception or recall data a website already observed. Please read README.md, PRIVACY.md and THREAT-MODEL.md.
 

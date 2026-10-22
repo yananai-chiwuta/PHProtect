@@ -6,7 +6,7 @@ Local PHP2Shell version checks and best-effort guards for sensitive website acti
 
 ## Distribution status
 
-The source and downloadable packages are public. Chrome Web Store submission is being prepared; it has not yet been confirmed as submitted or approved. Install from the release ZIP using the instructions below. This status will be updated after the developer dashboard confirms review submission.
+**PHProtect 1.1.1 was submitted to the Chrome Web Store for review on 22 October 2026.** The developer dashboard confirms **Pending review**. It is not approved or available from the store yet; automatic publication is enabled after approval. The source and downloadable packages are public now. Install from the release ZIP using the instructions below.
 
 [Download the Chrome build](https://github.com/yananai-chiwuta/PHProtect/releases/latest/download/phprotect-chrome.zip) | [All releases and checksums](https://github.com/yananai-chiwuta/PHProtect/releases/latest) | [Project website](https://yananai-chiwuta.github.io/PHProtect/) | [Privacy policy](https://yananai-chiwuta.github.io/PHProtect/privacy.html)
 

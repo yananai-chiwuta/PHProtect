@@ -1,6 +1,6 @@
 # Release and publication
 
-PHProtect source and release packages are public. Version 1.1.1 is being prepared for Chrome Web Store review and is not yet confirmed as submitted or approved. The Firefox build remains unsigned and experimental.
+PHProtect 1.1.1 source and release packages are public. Version 1.1.1 was submitted to the Chrome Web Store on 22 October 2026; the developer dashboard confirms **Pending review**. Automatic publication is enabled after approval. It is not approved or available from the store yet. The Firefox build remains unsigned and experimental.
 
 ## Package and checks
 
@@ -77,11 +77,13 @@ Answer the dashboard's current data-use questions against the actual definitions
 - Private vulnerability reporting: https://github.com/yananai-chiwuta/PHProtect/security/advisories/new
 - GitHub Actions is enabled for checks and automatic PR closure. The initial release checks passed.
 
-## Chrome Web Store draft
+## Chrome Web Store submission
 
-The Chrome package and listing use item ID `klghbcoedkempaokhdfmjikaebnkndmn`. Version 1.1.1 replaces the initial draft. The listing includes the real UI screenshots, Privacy & Security category, homepage and support links, permission justifications, local data-handling disclosures, no-remote-code declaration and inert reviewer instructions. Distribution is public, free of charge and available in all store regions.
+The submitted Chrome package and listing use item ID `klghbcoedkempaokhdfmjikaebnkndmn`, version 1.1.1. The listing includes the real UI screenshots, Privacy & Security category, homepage and support links, permission justifications, local data-handling disclosures, no-remote-code declaration and inert reviewer instructions. Distribution is public, free of charge and available in all store regions.
 
-The publisher's public contact email is verified. The item remains a draft until the developer dashboard confirms submission for review. Store approval is a separate outcome. Update the README distribution status only after a confirmed submission.
+The publisher's public contact is `version8@formanorden.com`, verified in the dashboard. Submission was confirmed by the dashboard's "Item submitted" message and "Pending Review" confirmation. The broad website permissions may require an in-depth review. Store approval remains a separate outcome.
+
+Submitted Chrome ZIP SHA-256: `192f023768d10943ce53e60fc0450be16dcede92210122a9d5d8b27a7814995d`.
 
 Firefox still needs live testing, manifest/linter review and Mozilla signing before supported distribution.
 
