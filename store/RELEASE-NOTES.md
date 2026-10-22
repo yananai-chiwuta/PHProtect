@@ -1,4 +1,6 @@
-PHProtect 1.1.0 is available from source and as downloadable extension packages.
+PHProtect 1.1.1 is available from source and as downloadable extension packages.
+
+Browser icons now fill their canvas for better visibility in the toolbar and extension manager. The extension name and listing copy are synchronized.
 
 - phprotect-chrome.zip: extract and load unpacked in Chrome. This ZIP is not a Chrome Web Store installation.
 - phprotect-firefox.zip: experimental evaluation build; temporary installation only, pending separate Firefox validation and signing.

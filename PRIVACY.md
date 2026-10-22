@@ -1,6 +1,6 @@
 # PHProtect Privacy Policy
 
-Effective date: 22 October 2026. Applies to PHProtect 1.1.0.
+Effective date: 22 October 2026. Applies to PHProtect 1.1.1.
 
 PHProtect performs checks on your device. The extension has no developer-operated backend, accounts, telemetry, advertising, analytics, remote rule downloads or remote executable code. It does process potentially sensitive website data locally. "No telemetry" does not mean "no access to data."
 

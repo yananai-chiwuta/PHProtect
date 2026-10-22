@@ -1,6 +1,5 @@
 """Compose store assets from actual extension UI captures, not invented mockups."""
 from pathlib import Path
-import shutil
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -51,7 +50,12 @@ def screenshot(name, title, paragraphs, capture):
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    shutil.copyfile(ROOT / "src/icons/icon-128.png", OUT / "icon-128.png")
+    # The store listing has its own 96px artwork area on a 128px canvas.
+    # Do not apply this padding to browser toolbar or extension-manager icons.
+    icon = Image.open(ROOT / "src/icons/icon-128.png").convert("RGBA")
+    store_icon = Image.new("RGBA", (128, 128), (0, 0, 0, 0))
+    store_icon.alpha_composite(icon.resize((96, 96), Image.LANCZOS), (16, 16))
+    store_icon.save(OUT / "icon-128.png", optimize=True)
     promo = Image.new("RGB", (440, 280), "#282b30")
     icon = Image.open(ROOT / "src/icons/icon-128.png").convert("RGBA")
     promo.paste(icon, (156, 45), icon)

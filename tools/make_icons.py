@@ -58,11 +58,9 @@ def render() -> Image.Image:
     # Keyhole: circle plus a flared stem.
     d.ellipse((s(204), s(196), s(308), s(300)), fill=KEY)
     d.polygon([(s(230), s(278)), (s(282), s(278)), (s(302), s(392)), (s(210), s(392))], fill=KEY)
-    # Store artwork occupies 96px inside the 128px canvas.
-    content = img.resize((384 * SS, 384 * SS), Image.LANCZOS)
-    padded = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    padded.alpha_composite(content, (64 * SS, 64 * SS))
-    return padded
+    # Browser icons use the full canvas so the mark stays legible at 16px.
+    # Store-listing padding is applied separately by make_store_assets.py.
+    return img
 
 
 def main() -> None:

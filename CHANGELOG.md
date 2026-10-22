@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.1 - 2026-10-22
+
+- Enlarged browser icons to fill their canvas, keeping store-listing padding separate.
+- Synchronized the extension name with the store listing.
+
 ## 1.1.0 - 2026-10-22
 
 - Replaced the popup, decision-window and help-page presentation with a plain utility interface; added onboarding, guard availability feedback, clear site exceptions and local privacy information.

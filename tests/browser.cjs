@@ -166,7 +166,9 @@ const server = createFixtureServer(logs);
         return recheck(tab.id);
       });
       assert.equal(result.ok, true);
-      const requests = logs.slice(before);
+      // Chromium may request /favicon.ico after the navigation load event.
+      // Only the refresh endpoint belongs to this request-sequence assertion.
+      const requests = logs.slice(before).filter((r) => r.url === "/fallback");
       assert.deepEqual(
         requests.map((r) => r.method),
         ["HEAD", "GET"]

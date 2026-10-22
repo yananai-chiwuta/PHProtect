@@ -1,7 +1,7 @@
 // PHProtect: PHP2Shell exposure assessment.
 //
 // Data source for the cutoffs below: OpenAI's php2shell-checker (Apache-2.0),
-// https://github.com/openai/php2shell-checker — `VULNERABLE_THROUGH`.
+// https://github.com/openai/php2shell-checker: `VULNERABLE_THROUGH`.
 // We add the branch-EOL distinction, multiple-version handling, header
 // provenance and prerelease handling that a browser extension needs.
 //

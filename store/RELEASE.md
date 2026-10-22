@@ -1,6 +1,6 @@
 # Release and publication
 
-PHProtect 1.1.0 source and release packages are public. Chrome Web Store submission is in progress and is not yet confirmed as submitted or approved. The Firefox build remains unsigned and experimental.
+PHProtect source and release packages are public. Version 1.1.1 is being prepared for Chrome Web Store review and is not yet confirmed as submitted or approved. The Firefox build remains unsigned and experimental.
 
 ## Package and checks
 
@@ -24,7 +24,7 @@ Reviewers can reproduce fixed timestamps, path order and ZIP metadata with the s
 
 ## Assets
 
-- `store/assets/icon-128.png`: extension icon with transparent padding.
+- `store/assets/icon-128.png`: store-listing icon with transparent padding. Browser icons in `src/icons/` fill their canvas for legibility at small sizes.
 - `store/assets/promo-440x280.png`: small promotional image.
 - `store/assets/screenshot-01.png`: actual popup with local version evidence.
 - `store/assets/screenshot-02.png`: actual decision UI with an inert approval example.
@@ -71,7 +71,7 @@ Answer the dashboard's current data-use questions against the actual definitions
 ## Published distribution
 
 - Public repository: https://github.com/yananai-chiwuta/PHProtect
-- Release packages and SHA-256 checksums: https://github.com/yananai-chiwuta/PHProtect/releases/tag/v1.1.0
+- Release packages and SHA-256 checksums: https://github.com/yananai-chiwuta/PHProtect/releases/latest
 - Public download and installation page: https://yananai-chiwuta.github.io/PHProtect/
 - Public privacy policy and Limited Use statement: https://yananai-chiwuta.github.io/PHProtect/privacy.html
 - Private vulnerability reporting: https://github.com/yananai-chiwuta/PHProtect/security/advisories/new
@@ -79,9 +79,9 @@ Answer the dashboard's current data-use questions against the actual definitions
 
 ## Chrome Web Store draft
 
-The Chrome package and listing are saved under item ID `klghbcoedkempaokhdfmjikaebnkndmn` (version 1.1.0). The listing includes the real UI screenshots, Privacy & Security category, homepage and support links, permission justifications, local data-handling disclosures, no-remote-code declaration and inert reviewer instructions. Distribution is public, free of charge and available in all store regions.
+The Chrome package and listing use item ID `klghbcoedkempaokhdfmjikaebnkndmn`. Version 1.1.1 replaces the initial draft. The listing includes the real UI screenshots, Privacy & Security category, homepage and support links, permission justifications, local data-handling disclosures, no-remote-code declaration and inert reviewer instructions. Distribution is public, free of charge and available in all store regions.
 
-Submission is awaiting verification of the publisher's public contact email. The item remains a draft until the developer dashboard confirms submission for review. Store approval is a separate outcome. Update the README distribution status only after a confirmed submission.
+The publisher's public contact email is verified. The item remains a draft until the developer dashboard confirms submission for review. Store approval is a separate outcome. Update the README distribution status only after a confirmed submission.
 
 Firefox still needs live testing, manifest/linter review and Mozilla signing before supported distribution.
 

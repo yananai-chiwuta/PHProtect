@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "PHProtect — PHP2Shell Awareness & Web Guards"
+    "message": "PHProtect - PHP2Shell Awareness & Web Guards"
   },
   "extDescription": {
     "message": "Local PHP2Shell version checks and best-effort guards for recovery phrases, wallet requests and clipboard commands. No telemetry."

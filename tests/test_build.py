@@ -32,7 +32,7 @@ class ReleasePackages(unittest.TestCase):
                         for required in ("manifest.json", "help.html", "privacy.html", "LICENSE", "NOTICE", "third_party/Apache-2.0.txt", "third_party/BIP39-MIT.txt", "third_party/upstream-MIT.txt"):
                             self.assertIn(required, names)
                         manifest = json.loads(package.read("manifest.json"))
-                        self.assertEqual(manifest["version"], "1.1.0")
+                        self.assertEqual(manifest["version"], "1.1.1")
                         self.assertEqual(sorted(manifest["permissions"]), ["storage", "webRequest"])
                         for name in names:
                             self.assertNotIn("\\", name)
